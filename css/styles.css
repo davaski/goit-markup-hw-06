@@ -396,6 +396,10 @@ p {
   color: #f4f4fd;
 }
 .model-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
   color: var(--colors);
   background-color: #f4f4fd;
   font-family: 'Roboto', sans-serif;
@@ -404,13 +408,22 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  padding: 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .model-button {
+    padding: 12px 23px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .model-button {
+    padding: 12px 24px;
+  }
 }
 .model-button:hover,
 .model-button:focus {
@@ -508,6 +521,7 @@ p {
   margin-bottom: 8px;
   text-align: center;
 }
+
 @media screen and (min-width: 768px) {
   .third-name {
     text-align: left;
@@ -521,6 +535,7 @@ p {
     line-height: 1.2;
   }
 }
+
 .para-graph {
   color: var(--color);
   font-size: 16px;
@@ -528,6 +543,7 @@ p {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
+
 @media screen and (min-width: 1158px) {
   .para-graph {
     font-weight: 400;
@@ -572,23 +588,69 @@ p {
   padding: 32px 0;
 }
 .section-portfolio {
-  padding: 96px 0 120px 0;
+  padding: 48px 0;
+}
+@media screen and (min-width: 768px) {
+  .section-portfolio {
+    padding: 64px 0 96px 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-portfolio {
+    padding: 100px 0 120px 0;
+  }
 }
 .button-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  max-width: 263px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    flex-wrap: nowrap;
+    width: 586px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    width: 100%;
+  }
 }
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  .example-list {
+    gap: 72px 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .example-list {
+    gap: 48px 24px;
+  }
 }
 .images {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  max-width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .images {
+    width: calc((100% - 24px * 1) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .images {
+    width: calc((100% - 24px * 2) / 3);
+  }
 }
 .categories {
   padding: 32px 16px;
@@ -840,7 +902,7 @@ p {
 }
 .paragraph-img {
   position: absolute;
-  top: 0;
+  top: 0vh;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1134,5 +1196,38 @@ input[type='checkbox']:checked + label > span {
 @media screen and (min-width: 428px) {
   .socials-link {
     gap: 56px;
+  }
+}
+.portfolio-tittle {
+  color: var(--back-color);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.para-graph-portfolio {
+  color: var(--color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.portfolio-image {
+  width: 396px;
+  height: 280px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-image {
+    width: 356px;
+    height: 330px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-image {
+    width: 360px;
+    height: 330px;
   }
 }
