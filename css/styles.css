@@ -397,8 +397,6 @@ p {
 }
 .model-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 7px 15px;
   color: var(--colors);
   background-color: #f4f4fd;
@@ -417,14 +415,10 @@ p {
 }
 @media screen and (min-width: 768px) {
   .model-button {
-    padding: 12px 23px;
+    padding: 11px 23px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .model-button {
-    padding: 12px 24px;
-  }
-}
+
 .model-button:hover,
 .model-button:focus {
   color: var(--brand-color);
@@ -604,7 +598,7 @@ p {
   display: flex;
   gap: 16px 24px;
   margin-bottom: 48px;
-  width: 263px;
+  width: 264px;
   max-width: 100%;
   flex-wrap: wrap;
 }
@@ -617,11 +611,6 @@ p {
     align-items: center;
     margin: 0 auto;
     margin-bottom: 64px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button-list {
-    width: 100%;
   }
 }
 .example-list {
