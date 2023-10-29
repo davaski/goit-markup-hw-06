@@ -602,9 +602,10 @@ p {
 }
 .button-list {
   display: flex;
-  gap: 24px;
+  gap: 16px 24px;
   margin-bottom: 48px;
-  max-width: 263px;
+  width: 263px;
+  max-width: 100%;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
