@@ -399,7 +399,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 15px;
+  padding: 7px 15px;
   color: var(--colors);
   background-color: #f4f4fd;
   font-family: 'Roboto', sans-serif;
