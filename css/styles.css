@@ -397,7 +397,7 @@ p {
 }
 .model-button {
   display: flex;
-  padding: 7px 15px;
+  padding: 7.25px 15px;
   color: var(--colors);
   background-color: #f4f4fd;
   font-family: 'Roboto', sans-serif;
@@ -598,7 +598,7 @@ p {
   display: flex;
   gap: 16px 24px;
   margin-bottom: 48px;
-  width: 264px;
+  width: 263px;
   max-width: 100%;
   flex-wrap: wrap;
 }
