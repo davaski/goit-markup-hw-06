@@ -397,7 +397,7 @@ p {
 }
 .model-button {
   display: flex;
-  padding: 7.25px 15px;
+  padding: 7px 15px;
   color: var(--colors);
   background-color: #f4f4fd;
   font-family: 'Roboto', sans-serif;
