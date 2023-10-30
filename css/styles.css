@@ -1118,19 +1118,7 @@ input[type='checkbox']:checked + label > span {
 .menu-container.is-open {
   transform: translateX(0);
 }
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  background-color: transparent;
-  border: 1px solid #e7e9fc;
-  border-radius: 50%;
-}
+
 .mobile-menu {
   margin-bottom: auto;
 }
