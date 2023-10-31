@@ -813,7 +813,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   width: 392px;
   max-width: 100%;
   min-height: 584px;
@@ -828,7 +828,6 @@ p {
   .window {
     width: 408px;
     padding: 72px 25px 24px 23px;
-    transform: translate(-51%, -55%) scale(1);
   }
 }
 @media screen and (min-width: 1158px) {
